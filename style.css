@@ -1,0 +1,101 @@
+
+/* 전체 바디 스타일 - 부드러운 배경과 폰트 */
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background-color: #fffbea;
+  color: #333;
+  padding: 40px;
+  text-align: center;
+  cursor: none;
+}
+
+/* 제목 스타일 */
+h1 {
+  font-size: 2.5rem;
+  color: #ff8a65;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: #fff5dc;
+  display: inline-block;
+  padding: 20px 40px;
+  box-shadow: 0 10px 30px rgba(255, 200, 150, 0.2);
+}
+
+/* 본문 텍스트 */
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* 프로필 이미지 스타일 */
+img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 6px solid #fff0d5;
+}
+
+/* 버튼 스타일 - 둥글고 폭신한 느낌 */
+button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  background-color: #ffd6d6;
+  border: none;
+  border-radius: 999px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255, 170, 170, 0.3);
+}
+
+button:hover {
+  background-color: #ffc9c9;
+}
+
+/* 사용자 정의 커서 이미지 */
+.custom-cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("images/노란 네잎클로버 이파리.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* 카테고리 이미지 (프로젝트 썸네일) */
+.category-image {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0 12px 24px rgba(255, 200, 150, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.category-image:hover {
+  transform: scale(1.05);
+}
+
+/* 프로젝트 목록 (토글 영역) */
+.project-list {
+  display: none;
+  margin-top: 10px;
+}
+
+.project-list p {
+  margin: 5px 0;
+}
+.project-list a {
+  color: #333;
+  text-decoration: none;
+}
+.project-list a:hover {
+  text-decoration: underline;
+}

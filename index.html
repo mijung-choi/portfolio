@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>최미정의 포트폴리오</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 인삿말 -->
+  <h1>안녕하세요! 저는 최미정입니다</h1>
+  <!-- 프로필 사진 -->
+      <img src="images/노란 네잎클로버 2.png" alt="프로필 사진" class="profile" />
+  </div>
+  <!-- 카테고리 영역 -->
+   <div class="category-row">
+    <div class="category">
+      <img src="images/분홍 열대어.png" alt="웹 프로젝트" class="category-image" onclick="toggleProjects('web-projects')" />
+      <div id="web-projects" class="project-list">
+        <p><a href="#">Landing Page Redesign</a></p>
+        <p><a href="#">Portfolio Template</a></p>
+      </div>
+    </div>
+
+    <div class="category">
+      <img src="images/4살 남자아이.png" alt="앱 프로젝트" class="category-image" onclick="toggleProjects('app-projects')" />
+      <div id="app-projects" class="project-list">
+        <p><a href="#">Todo App</a></p>
+        <p><a href="#">Weather Tracker</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 마우스 따라다니는 이미지 -->
+  <div class="custom-cursor"></div>
+
+  <!-- JS 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
