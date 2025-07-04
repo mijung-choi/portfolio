@@ -15,12 +15,15 @@ body {
   height: 50px;
   pointer-events: none;
   z-index: 9999;
-  background-image: url("images/노란 네잎클로버 이파리.png");
+  background-image: url("images/노란 네잎클로버 이파리.png"); /* 이미지 경로 */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  /* 커서 정중앙에 위치시키기 */
   transform: translate(-50%, -50%) rotate(45deg);
 }
+
 
 /* 제목 스타일 */
 h1 {
@@ -163,11 +166,12 @@ footer {
 
 .ar-image {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 200px; /* 또는 원하는 고정 높이 (ex. 220px, 250px) */
+  object-fit: cover; /* 잘리지 않게 균형 맞춰 보여줌 */
   border-radius: 12px;
   margin-top: 10px;
 }
+
 .speech-bubble {
   position: relative;
   background: #fff9c4;
