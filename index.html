@@ -31,7 +31,8 @@
 
     <div class="section">
       <h3>문제 인식과 기획 의도</h3>
-      <p>기존 키즈카페 및 장난감은 몰입 시간이 짧고, 단순 반복적입니다. 아이들이 움직임, 수집, 반응에 열광한다는 인사이트를 바탕으로, 몰입형 AR 수조 놀이를 기획했습니다.</p>
+      <p>기존 키즈카페 및 장난감은 몰입 시간이 짧고, 단순 반복적입니다.
+        아이들이 움직임, 수집, 반응에 열광한다는 인사이트를 바탕으로, 몰입형 AR 수조 놀이를 기획했습니다.</p>
     </div>
 
     <!-- 카드들 묶는 카드 그리드 -->
@@ -59,10 +60,6 @@
       </div>
 
     </div> <!-- .card-grid 끝 -->
-
-  </div> <!-- #web-projects 끝 -->
-</div> <!-- .category 끝 -->
-
         </div>
 
         <div class="section">
@@ -100,13 +97,122 @@
         </div>
       </div>
     </div>
+      </div> <!-- #web-projects 끝 -->
+</div> <!-- .category 끝 -->
 
     <!-- 앱 프로젝트 -->
     <div class="category">
       <img src="images/4살 남자아이.png" alt="앱 프로젝트" class="category-image" onclick="toggleProjects('app-projects')" />
       <div id="app-projects" class="project-list">
-        <p><a href="#">Todo App</a></p>
-        <p><a href="#">Weather Tracker</a></p>
+        <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나는 어떤 아이였을까?</title>
+  <style>
+    body {
+      font-family: 'Apple SD Gothic Neo', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #ffe9c8;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #5c4a32;
+    }
+    .grid-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .grid-table div {
+      background: #fff3e0;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .img-example {
+      max-width: 100%;
+      border-radius: 0.5rem;
+      margin-top: 1rem;ㅎ
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ffe9c8;
+      color: #7a5f3c;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <div class="speech-bubble">
+  나는 어떤 아이였을까?
+</div>
+    <p>어린 시절의 나를 마주하는 감성 심리 체험</p>
+  </header>
+
+  <section>
+    <h2>✨ 프로젝트 개요</h2>
+    <p><em>'나는 어떤 아이였을까?'</em>는 사용자가 동화 같은 하루를 체험하며 자신의 어린 시절을 돌아볼 수 있도록 설계된 감성 성향 검사 콘텐츠입니다.</p>
+
+    <h2>🎯 기획 의도</h2>
+    <ul>
+      <li>바쁜 일상 속 잊고 지낸 '어린 시절의 나'를 재발견</li>
+      <li>감정 회복과 자아 탐색을 위한 스토리 중심 경험</li>
+    </ul>
+
+    <h2>🧩 주요 기능</h2>
+    <ul>
+      <li>아침, 유치원, 저녁으로 이어지는 하루의 여정</li>
+       <img src="어린시절 나 웹사이트.png" alt="웹사이트 시작" class="img-example" />
+      <li>말풍선 기반 선택지와 간단한 그림 그리기</li>
+       <img src="검사 말풍선.png" alt="말풍선 선택" class="img-example" />
+      <li>한 줄 요약, 키워드 분석, 맞춤 추천 결과</li>
+       <img src="어린시절 나 결과.png" alt="결과 예시" class="img-example" />
+    </ul>
+
+    <h2>🧠 기술 스택</h2>
+    <div class="grid-table">
+      <div><strong>React</strong><br/>프론트엔드 SPA 구성</div>
+      <div><strong>Tailwind CSS</strong><br/>감성 UI 스타일링</div>
+      <div><strong>Node.js</strong><br/>백엔드 API 처리</div>
+      <div><strong>Canvas API</strong><br/>간단한 그림 그리기 기능</div>
+    </div>
+
+       <h2>🌱 기대 효과</h2>
+    <p>
+- 자아 이해와 정서적 힐링을 동시에 제공
+- 콘텐츠 기반 확장이 쉬움 (친구 모드 / 성장한 나 모드 등)
+- SNS 공유/기록 기능을 통해 바이럴 요소 확보</p>
+
+    <h2>🌱 한 줄 요약</h2>
+    <blockquote>“어린 시절의 나를 마주하는, 가장 따뜻한 하루”</blockquote>
+  </section>
+
+  <footer>
+    &copy; 2025 나는 어떤 아이였을까? 프로젝트<br />Designed by 최미정
+  </footer>
+</body>
+</html>
+
       </div>
     </div>
   </div>
