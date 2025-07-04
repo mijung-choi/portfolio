@@ -11,18 +11,19 @@ body {
 /* 사용자 정의 커서 이미지 */
 .custom-cursor {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 50px;
   height: 50px;
   pointer-events: none;
   z-index: 9999;
-  background-image: url("images/노란 네잎클로버 이파리.png"); /* 이미지 경로 */
+  background-image: url("images/노란 네잎클로버 이파리.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  /* 커서 정중앙에 위치시키기 */
   transform: translate(-50%, -50%) rotate(45deg);
 }
+
 
 
 /* 제목 스타일 */
@@ -166,10 +167,11 @@ footer {
 
 .ar-image {
   width: 100%;
-  height: 200px; /* 또는 원하는 고정 높이 (ex. 220px, 250px) */
-  object-fit: cover; /* 잘리지 않게 균형 맞춰 보여줌 */
+  height: 220px; /* 고정된 세로 크기 */
+  object-fit: contain; /* 이미지 비율 유지 + 잘리지 않음 */
   border-radius: 12px;
   margin-top: 10px;
+  background-color: #fff; /* 이미지 비율 때문에 여백이 생길 때 깔끔하게 처리 */
 }
 
 .speech-bubble {
